@@ -10,18 +10,23 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <h2>Pari o dispari</h2>
+    <div class="container text-center my-5">
+        <h2 class="my-2">Pari o dispari</h2>
         <form action="">
-            <input type="text" id="user_number" placeholder="Inserisci qui un numero" class="pe-5 rounded ">
-            <div class="btn-group ms-3" role="group">
-                <button type="button" class="btn btn-primary">Pari</button>
-                <button type="button" class="btn btn-primary">Dispari</button>
-                <button type="button" class="ms-3 rounded-pill px-4 py-1" id="inserisci">Invia</button>
+            <div id="elementNumber">
+                <input type="text" id="user_number" placeholder="Inserisci qui un numero" class="pe-5 rounded my-4 ">
+
             </div>
+            <select name="scelta" id="choice" class="rounded px-3 py-1">
+                <option value="even">Pari</option>
+                <option value="odd">Dispari</option>
+            </select>
+            <button type="button" class="ms-3 rounded-pill px-4 py-1" id="inserisci">Invia</button>
 
         </form>
+
+        <div id="winner" class="my-5"></div>
+
 
     </div>
 
